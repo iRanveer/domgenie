@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.shadow-image {
+    display: block;
+    margin: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Dark shade around the image */
+  }
+
+  .image-container {
+    display: inline-block;
+    padding: 10px; /* Space around the image */
+    background: rgba(0, 0, 0, 0.7); /* Dark shade */
+    border-radius: 12px; /* Optional: Rounded corners */
+  }
+  
+  .image-container img {
+    display: block;
+    border-radius: 8px; /* Optional: Match with the container */
+  }
+  
+  .chatInput {
+    outline: none;
+    border: none;
+    caret-color: black;
+  }
+  .chatInput:focus {
+    animation: blink-cursor 1s infinite;
+  }
+
+  .prose {
+   
+    max-width: 70ch;
+   /*  margin-left: 65px; */
+
+  
+}
+
+.prose h1{
+   
+  font-size: 24px;
+}
+
+.prose h2{
+   
+  font-size: 20px;
+}
+
+.prose textarea:focus{
+   
+  animation: blink-cursor 1s infinite;
+}
+
+.checkbox-large {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+

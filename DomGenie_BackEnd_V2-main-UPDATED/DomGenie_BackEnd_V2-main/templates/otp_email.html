@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your OTP Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            background-color: #007bff;
+            padding: 20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .otp-code {
+            font-size: 32px;
+            font-weight: bold;
+            color: #007bff;
+            margin: 20px 0;
+            display: inline-block;
+            background: #f1f1f1;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+        .message {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+        .footer {
+            font-size: 14px;
+            color: #777777;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            OTP Verification
+        </div>
+        <p class="message">Dear <strong>{{ name }}</strong>,</p>
+        <p class="message">Thank you for signing up with DomGenie. To complete your registration, please use the following One-Time Password (OTP) to verify your account:
+            :</p>
+        <div class="otp-code">{{ otp }}</div>
+        <p class="message">The OTP is valid for the next 3 minutes. If you didn’t request this, please disregard this email and we recommend changing your password..</p>
+        
+        <div class="footer">
+            If you have any questions or need assistance, feel free to reach out to us at <br>
+             <a href="mailto:support@domgenie.ai">support@domgenie.ai</a>
+        </div>
+        <div>
+            Cheers,
+            DomGenie Support Team
+        </div>
+    </div>
+</body>
+</html>

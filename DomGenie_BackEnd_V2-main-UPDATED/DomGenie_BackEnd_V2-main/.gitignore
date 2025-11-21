@@ -1,0 +1,7 @@
+__pycache__
+
+ Dockerfile
+alembic/env.py
+desktop.ini
+docker-compose.yml
+/src/core
